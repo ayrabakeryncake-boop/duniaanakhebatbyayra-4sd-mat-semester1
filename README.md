@@ -1,2 +1,513 @@
-# duniaanakhebatbyayra-4sd-mat-semester1
-4SD/MI Matematika Semester 1
+<!doctype html>
+<html lang="id"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20261014-04-caa1adb","C":{"Abril Fatface":"YACgEZbkUVE,0","Albert Sans":"YAHO2HRfeh4,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo Black":"YACgEZulLoA,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Baloo 2":"YAHO2IcQUcM,0","Barlow Condensed":"YAFdJljEuFc,0","Barlow":"YAFdJsyuOPM,1","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Cinzel":"YACgEeV8bIQ,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Figtree":"YAHO2b-mV7A,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Fredoka":"YACgEZml080,0","Georgia":"YAGzXkO0pEM,0","Hanken Grotesk":"YAHO2VB9G0I,0","Helvetica":"YAFcf7zkXN0,0","IBM Plex Mono":"YAFdJkmvhGI,0","IBM Plex Sans":"YAFdJgT0SHI,0","Impact":"YAFcfnjI7Vk,0","Instrument Sans":"YAHO2bKyaSQ,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Italiana":"YAHO2Toik_w,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Karla":"YAHO2V2NSXM,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Libre Caslon Display":"YAHO2XhLmt0,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Noto Sans JP":"YAFdJiHXlcI,0","Noto Sans KR":"YAGsojZj-RQ,0","Nunito Sans":"YAFdtQJYB9w,1","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Outfit":"YAHO2nVlg14,0","Pacifico":"YADLjORQ1u4,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAHO2gdhi18,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Public Sans":"YAFdJj8NdaU,1","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Sarabun":"YAFdJssSnME,0","Schibsted Grotesk":"YAHO2sWydRk,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Space Mono":"YADW1-vpsoc,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script><script src="/_sdk/05db820ba1544614.telemetry_sdk.js" integrity="sha512-a7JzkQDDcioSXpM61nxTfeRW7PcxWQy5+BrhyeTFmQFsXJ+Gncm0y50u7fTA7qOPegFnRgqCfa0mGUOK1yjDWQ=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BRAIN GAMES MATEMATIKA CERDAS</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Fredoka:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#17254b;--blue:#3159d9}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);font-family:"DM Sans",sans-serif}
+    h1,h2,h3,.display{font-family:Fredoka,"DM Sans",sans-serif}
+    .app-shell{width:100%;min-height:100%;background:radial-gradient(circle at 95% 4%,#e4ddff 0,transparent 33%),radial-gradient(circle at 0 50%,#ddf6ff 0,transparent 38%),#f4f7ff}
+    .surface{background:#fff;border:1px solid #e2e8fa;box-shadow:0 12px 35px #30448812}
+    .action{min-height:48px;border-radius:16px;padding:12px 20px;font-weight:800;transition:transform .18s,filter .18s;cursor:pointer}
+    .action:hover:not(:disabled){transform:translateY(-2px);filter:brightness(1.05)}
+    .action:disabled{opacity:.55;cursor:wait}
+    .primary{background:#3159d9;color:#fff}.secondary{background:#e8eaff;color:#292969}.yellow{background:#ffd75a;color:#332718}
+    .choice{min-height:58px;width:100%;text-align:left;border:2px solid #e0e7f5;border-radius:18px;background:#fff;padding:14px 18px;font-weight:700;cursor:pointer;overflow-wrap:anywhere}
+    .choice:hover:not(:disabled){border-color:#6080e7;background:#f5f7ff}
+    .choice.chosen{border-color:#3159d9;background:#eaf0ff}
+    .choice.good{border-color:#17835a;background:#e4f8ee}
+    .choice.bad{border-color:#d54b61;background:#fff0f1}
+    :focus-visible{outline:3px solid #e68a00!important;outline-offset:3px!important}
+    .rise{animation:rise .38s ease both}@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+    .chapter-card{border-top:6px solid var(--accent)}
+    .bar{height:12px;background:#e8ecf8;border-radius:99px;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,#3159d9,#20b987)}
+    .math-art{font-family:Fredoka,sans-serif;line-height:1}
+    .wrap-text{overflow-wrap:anywhere}
+    @media(max-width:430px){.action{width:100%}.choice{padding:12px}.app-shell{overflow-x:clip}}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="/_sdk/570d53629f0b998d.data_sdk.js" type="text/javascript" integrity="sha512-JEN39+V+Nvv9ZZOVS8vNk1iA9ErZJHTdgOw9KzPuMiK7m0I+KPEr/wmTnCFIQVsDjCZgJWfGnFi1IQh2Io2qyA=="></script>
+  <script src="/_sdk/0b63fb8940df03d4.editing_sdk.js" type="text/javascript" integrity="sha512-fFkkekAA7XKU9UcNO+7a7lGi1SDVYUdIo1lpZS9YpfVovu1WAj3C/MEr/w8zt6Jwq6OKflaYkwf4eOUpMYGz9A=="></script>
+  <script src="/_sdk/f195026a424c1f85.resizing_sdk.js" type="text/javascript" integrity="sha512-8On4Z+AXh1abEzZJ9Dbn9wOvFg+k1LsAaAzKGQ7LlfgXajZ9xEmZaZ1QVzv0AWhCZtCsEpWSOG9DgLri06TS7A=="></script>
+ </head>
+ <body data-template-id="__page-root" style="background: rgb(244, 247, 255);">
+  <div class="app-shell">
+   <header class="w-full border-b border-indigo-100 bg-white/85">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-3">
+     <span data-template-id="brand" class="canva-text display font-bold" style="color: rgb(55, 60, 149); font-weight: 700; font-style: normal; font-size: 16px;">★ BRAIN GAMES</span> <button id="homeNav" data-template-id="home-nav" class="canva-button action secondary" type="button" style="background: rgb(232, 234, 255); color: rgb(41, 41, 105); font-weight: 700; font-style: normal; font-size: 16px;">Beranda</button>
+    </div>
+   </header>
+   <main id="app" class="w-full max-w-6xl mx-auto px-4 sm:px-6 py-8"></main>
+   <section aria-labelledby="link-area-title" class="w-full max-w-6xl mx-auto px-4 sm:px-6 pb-8" aria-label="Tautan penting">
+    <div class="surface rounded-3xl p-5 sm:p-6">
+     <h2 id="link-area-title" data-template-id="link-area-title" class="canva-text font-bold text-center" style="color: rgb(23, 37, 75); font-weight: 700; font-style: normal; font-size: 24px;">Tautan penting</h2>
+     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4"><a data-template-id="shopee-link" class="canva-link action primary flex items-center justify-center text-center no-underline min-h-[56px]" href="https://id.shp.ee/JjhnMLvp" target="_blank" rel="noopener noreferrer" aria-label="Buka shopee di tab baru" style="background: rgb(49, 89, 217); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">shopee</a> <a data-template-id="lynk-link" class="canva-link action yellow flex items-center justify-center text-center no-underline min-h-[56px]" href="https://lynk.id/rikearinda" target="_blank" rel="noopener noreferrer" aria-label="Buka lynk.id di tab baru" style="background: rgb(255, 215, 90); color: rgb(51, 39, 24); font-weight: 700; font-style: normal; font-size: 16px;">lynk.id</a>
+     </div>
+    </div>
+   </section>
+   <div class="hidden" aria-hidden="true">
+    <span data-template-id="hero-title" class="canva-text" style="color: rgb(23, 37, 75); font-weight: 700; font-style: normal; font-size: 16px;">BRAIN GAMES MATEMATIKA CERDAS</span><span data-template-id="hero-subtitle" class="canva-text" style="color: rgb(49, 89, 217); font-weight: 700; font-style: normal; font-size: 19px;">Kelas 4 SD/MI — Semester 1</span>
+   </div>
+  </div>
+  <div id="modal" class="hidden fixed inset-0 z-50 bg-slate-950/60 p-4 flex items-center justify-center" role="presentation">
+   <section class="surface w-full max-w-md rounded-3xl p-6" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <h2 id="modalTitle" data-template-id="modal-title" class="canva-text font-bold" style="color: rgb(23, 37, 75); font-weight: 700; font-style: normal; font-size: 24px;">Yakin ingin melanjutkan?</h2>
+    <p id="modalText" class="mt-3 text-slate-700"></p>
+    <div class="flex gap-3 justify-end mt-6 flex-wrap">
+     <button id="cancelModal" data-template-id="cancel-modal" class="canva-button action secondary" type="button" style="background: rgb(232, 234, 255); color: rgb(41, 41, 105); font-weight: 700; font-style: normal; font-size: 16px;">BATAL</button> <button id="confirmModal" data-template-id="confirm-modal" class="canva-button action primary" type="button" style="background: rgb(49, 89, 217); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">YA, LANJUTKAN</button>
+    </div>
+   </section>
+  </div>
+  <script>
+(() => {
+  "use strict";
+  const KEY="brain-games-matematika-v3", VERSION=3, oldKeys=["brain-games-matematika-v2","brain-games-matematika-v1"];
+  const chapters=[
+    {id:1,title:"BILANGAN CACAH SAMPAI 10.000",description:"Nilai tempat, urutan, bentuk panjang, dan soal cerita.",icon:"1 000",color:"#3159d9"},
+    {id:2,title:"OPERASI HITUNG BILANGAN",description:"Penjumlahan, pengurangan, perkalian, pembagian, dan strategi.",icon:"＋ ×",color:"#8650c9"},
+    {id:3,title:"FAKTOR DAN KELIPATAN",description:"Temukan faktor, kelipatan, dan aturan pola.",icon:"✳",color:"#13826a"},
+    {id:4,title:"PECAHAN",description:"Kenali bagian, pecahan senilai, dan perbandingan.",icon:"½",color:"#d17132"},
+    {id:5,title:"POLA BILANGAN DAN KALIMAT MATEMATIKA",description:"Tebak aturan pola dan cari bilangan yang hilang.",icon:"? →",color:"#b43e82"},
+    {id:6,title:"PENGUKURAN DAN PEMECAHAN MASALAH",description:"Latihan panjang, berat, perubahan satuan, dan cerita.",icon:"📏",color:"#217ca5"}
+  ];
+  const levelNames=["Pemanasan","Mudah–menengah","Penerapan","Menantang"];
+  const app=document.getElementById("app");
+  const esc=x=>String(x).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const fmt=x=>Number(x).toLocaleString("id-ID");
+  const randomId=()=>`${Date.now()}-${Math.random().toString(36).slice(2)}`;
+  function shuffle(items){const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+  const difficulty=i=>Math.min(3,Math.floor(i/5));
+  const fresh=()=>({version:VERSION,chapters:{},exam:null,history:[],recent:{},active:null,scope:[1,2,3,4,5,6]});
+  let storageOK=true, storageWarning="", state=fresh(),screen="home",selected=null,viewedResult=null,remedialSummary=null,pendingAction=null,previousFocus=null,checks=[];
+  function load(){
+    try{[KEY,...oldKeys].forEach(k=>localStorage.removeItem(k))}catch{}
+    return fresh();
+  }
+  function save(){}
+  function qmake(ch,k,n,stem,answer,steps,concept,alternatives){
+    const values=[String(answer),...alternatives.map(String)];
+    if(new Set(values).size!==4)throw Error(`Pilihan ganda tidak unik: ${ch}-${k}-${n}`);
+    return {
+      questionId:`b${ch}-k${k}-n${n}`,signature:`b${ch}:k${k}:n${n}`,chapterId:ch,kind:k,
+      stem,steps,concept,explanation:`${steps} ${concept}`,
+      options:values.map((text,i)=>({id:`b${ch}-k${k}-n${n}-o${i}`,text})),
+      answerId:`b${ch}-k${k}-n${n}-o0`
+    };
+  }
+  function numeric(ch,k,n,stem,answer,steps,concept,deltas){
+    const wrong=[];
+    for(const d of [...deltas,1,-1,2,-2,10,-10,100,-100]){
+      const candidate=answer+d;
+      if(candidate>=0&&candidate!==answer&&!wrong.includes(candidate))wrong.push(candidate);
+      if(wrong.length===3)break;
+    }
+    return qmake(ch,k,n,stem,answer,steps,concept,wrong);
+  }
+  function generate(ch,k,n){
+    const a=21+n*7,b=3+n%9, c=2+(n*3)%7, person=["Dina","Rani","Bima","Ayu","Siti","Andi"][n%6];
+    if(ch===1){
+      const v=1024+(n*263)%8700,h=Math.floor(v%1000/100),th=Math.floor(v/1000),t=Math.floor(v%100/10),u=v%10;
+      if(k===0)return numeric(ch,k,n,`Pada bilangan ${fmt(v)}, berapa nilai angka pada tempat ratusan?`,h*100,`Angka ratusannya ${h}; ${h} × 100 = ${h*100}.`,"Nilai tempat ratusan adalah 100 kali angka pada posisi tersebut.",[100,-100,10]);
+      if(k===1)return numeric(ch,k,n,`Bilangan apakah yang tersusun dari ${th} ribuan, ${h} ratusan, ${t} puluhan, dan ${u} satuan?`,v,`${th} × 1.000 + ${h} × 100 + ${t} × 10 + ${u} = ${fmt(v)}.`,"Susun dari ribuan hingga satuan.",[100,10,1]);
+      if(k===2)return numeric(ch,k,n,`Mana yang lebih besar: ${fmt(v)} atau ${fmt(v+20+b)}?`,v+20+b,`${fmt(v+20+b)} lebih besar daripada ${fmt(v)}.`,"Bandingkan angka dari kiri ke kanan.",[-(20+b),10,100]);
+      if(k===3)return numeric(ch,k,n,`Perpustakaan memiliki ${fmt(v)} buku dan menerima ${b} buku baru. Berapa buku sekarang?`,v+b,`Diketahui ${fmt(v)} buku dan tambahan ${b}. ${fmt(v)} + ${b} = ${fmt(v+b)} buku.`,"Kata menerima berarti jumlah bertambah.",[-b,10,100]);
+      return numeric(ch,k,n,`${person} membaca halaman ${fmt(v)}. Nomor halaman tepat berikutnya adalah ...`,v+1,`${fmt(v)} + 1 = ${fmt(v+1)}.`,"Bilangan berikutnya didapat dengan menambah satu.",[-1,2,10]);
+    }
+    if(ch===2){
+      const x=140+n*17,y=13+n%27,p=3+n%8,r=4+(n*3)%9;
+      if(k===0)return numeric(ch,k,n,`${person} memiliki ${x} poin dan mendapat ${y} poin lagi. Berapa poin sekarang?`,x+y,`Diketahui ${x} poin, bertambah ${y}; ${x} + ${y} = ${x+y}.`,"Gunakan penjumlahan untuk jumlah yang bertambah.",[-y,10,100]);
+      if(k===1)return numeric(ch,k,n,`Di kantin ada ${x} roti. Sebanyak ${y} terjual. Berapa sisanya?`,x-y,`Diketahui ${x} roti, terjual ${y}; ${x} − ${y} = ${x-y}.`,"Gunakan pengurangan untuk mencari sisa.",[y,10,100]);
+      if(k===2)return numeric(ch,k,n,`Ada ${p} paket, setiap paket berisi ${r} pensil. Berapa pensil seluruhnya?`,p*r,`Diketahui ${p} kelompok masing-masing ${r}; ${p} × ${r} = ${p*r} pensil.`,"Kelompok sama banyak dihitung dengan perkalian.",[p,r,p+r]);
+      if(k===3)return numeric(ch,k,n,`${p*r} buku dibagi sama rata ke ${p} rak. Berapa buku per rak?`,r,`Diketahui ${p*r} buku untuk ${p} rak; ${p*r} ÷ ${p} = ${r}.`,"Pembagian sama rata mencari isi tiap rak.",[1,2,3]);
+      const given=Math.min(y,p*r-1);
+      return numeric(ch,k,n,`${person} memiliki ${p} kantong berisi ${r} kelereng masing-masing, lalu memberikan ${given} kelereng. Berapa sisanya?`,p*r-given,`Diketahui ${p} kantong × ${r} = ${p*r} kelereng; diberikan ${given}. Sisa ${p*r} − ${given} = ${p*r-given}.`,"Kalikan dahulu, lalu kurangi yang diberikan.",[given,p,r]);
+    }
+    if(ch===3){
+      const p=3+n%8,r=3+Math.floor(n/3)%8,product=p*r;
+      if(k===0)return qmake(ch,k,n,`Manakah faktor dari ${product}?`,p,`${product} ÷ ${p} = ${r} tanpa sisa.`,"Faktor membagi suatu bilangan tanpa sisa.",[product+1,product+2,product+3]);
+      if(k===1)return numeric(ch,k,n,`${product} pensil dibagi menjadi ${p} paket sama banyak. Berapa pensil per paket?`,r,`${product} ÷ ${p} = ${r}.`,"Pasangan faktor ${p} dan ${r} menghasilkan ${product}.",[1,2,3]);
+      if(k===2)return numeric(ch,k,n,`Kelipatan ke-${r} dari ${p} adalah ...`,product,`${p} × ${r} = ${product}.`,"Kelipatan diperoleh melalui perkalian.",[p,r,1]);
+      if(k===3)return numeric(ch,k,n,`Lengkapi pola kelipatan: ${p}, ${p*2}, ${p*3}, ...`,p*4,`${p*3} + ${p} = ${p*4}.`,"Setiap suku bertambah sebesar ${p}.",[p,2*p,1]);
+      return numeric(ch,k,n,`Lampu berkedip setiap ${p} detik; kedipan pertama pada detik ke-${p}. Kedipan ke-${r} terjadi pada detik ke-...`,product,`Diketahui jeda ${p} detik; kedipan ke-${r} pada ${p} × ${r} = ${product} detik.`,"Hitung kelipatan jeda sejak awal.",[p,r,1]);
+    }
+    if(ch===4){
+      const den=4+n%5,top=1+(Math.floor(n/2)%(den-1)),next=top+1;
+      if(k===0)return qmake(ch,k,n,`Sebuah kue dibagi ${den} bagian sama besar. ${top} bagian diarsir: ${"■".repeat(top)}${"□".repeat(den-top)}. Pecahannya adalah ...`,`${top}/${den}`,`Diketahui ${top} dari ${den} bagian diarsir; pembilang ${top}, penyebut ${den}.`,"Pecahannya adalah bagian diarsir dibanding seluruh bagian.",[`${den}/${top}`,`${top+1}/${den}`,`${top}/${den+1}`]);
+      if(k===1)return qmake(ch,k,n,`Pecahan senilai dengan ${top}/${den} adalah ...`,`${top*2}/${den*2}`,`Kalikan kedua bagian dengan 2: (${top} × 2)/(${den} × 2) = ${top*2}/${den*2}.`,"Pembilang dan penyebut harus dikalikan bilangan sama.",[`${top+1}/${den*2}`,`${top*2}/${den+1}`,`${top}/${den*2}`]);
+      if(k===2)return qmake(ch,k,n,`Mana lebih besar: ${top}/${den} atau ${next}/${den}?`,`${next}/${den}`,`Penyebut sama ${den}; karena ${next} > ${top}, maka ${next}/${den} lebih besar.`,"Dengan penyebut sama, bandingkan pembilang.",[`${top}/${den}`,`${top}/${den+1}`,`${next}/${den+1}`]);
+      if(k===3)return qmake(ch,k,n,`Pizza dibagi ${den} bagian; ${top} dimakan. Pecahan yang tersisa adalah ...`,`${den-top}/${den}`,`Diketahui ${den} bagian, ${top} dimakan; ${den} − ${top} = ${den-top} bagian tersisa, jadi ${den-top}/${den}.`,"Penyebut tetap jumlah seluruh bagian.",[`${top}/${den}`,`${den}/${den-top}`,`${den-top}/${den+1}`]);
+      return numeric(ch,k,n,`Pada pecahan ${top}/${den}, angka penyebut adalah ...`,den,`Angka di bawah garis adalah ${den}.`,"Penyebut menunjukkan jumlah seluruh bagian sama besar.",[1,2,3]);
+    }
+    if(ch===5){
+      const start=12+n*3,step=2+n%8;
+      if(k===0)return numeric(ch,k,n,`Susunan kursi mengikuti pola ${start}, ${start+step}, ${start+2*step}, ... Suku berikutnya?`,start+3*step,`Selisihnya ${step}; ${start+2*step} + ${step} = ${start+3*step}.`,"Temukan selisih antar suku.",[-step,step,1]);
+      if(k===1)return numeric(ch,k,n,`Poin mengikuti pola ${start+4*step}, ${start+3*step}, ${start+2*step}, ... Suku berikutnya?`,start+step,`Setiap suku berkurang ${step}; ${start+2*step} − ${step} = ${start+step}.`,"Pola turun menggunakan pengurangan tetap.",[step,-step,1]);
+      if(k===2)return numeric(ch,k,n,`Bilangan berapa mengisi □ + ${step} = ${start+step}?`,start,`${start+step} − ${step} = ${start}.`,"Gunakan operasi kebalikan untuk menemukan bilangan hilang.",[step,-step,1]);
+      if(k===3)return numeric(ch,k,n,`Bilangan berapa mengisi ${start+step} − □ = ${start}?`,step,`${start+step} − ${start} = ${step}.`,"Bilangan yang dikurangkan adalah selisih awal dan hasil.",[1,2,3]);
+      return numeric(ch,k,n,`${person} memiliki ${start} stiker, lalu menjadi ${start+step}. Berapa stiker yang didapat?`,step,`Diketahui awal ${start}, akhir ${start+step}; tambahan ${start+step} − ${start} = ${step}.`,"Kurangi jumlah akhir dengan jumlah awal.",[1,2,3]);
+    }
+    const m=2+n%8,kg=1+n%8,cm=18+(n*7)%70,g=150+(n%8)*100;
+    if(k===0)return numeric(ch,k,n,`Jalan kebun panjangnya ${m} m. Berapa sentimeter?`,m*100,`Diketahui ${m} m; 1 m = 100 cm, jadi ${m} × 100 = ${m*100} cm.`,"Ubah meter ke sentimeter dengan mengalikan 100.",[100,-100,10]);
+    if(k===1)return numeric(ch,k,n,`Berat belanjaan ${kg} kg. Berapa gram?`,kg*1000,`Diketahui ${kg} kg; 1 kg = 1.000 g, jadi ${kg} × 1.000 = ${fmt(kg*1000)} g.`,"Ubah kilogram ke gram dengan mengalikan 1.000.",[1000,-1000,100]);
+    if(k===2)return numeric(ch,k,n,`Pita sepanjang ${m} m dipotong ${cm} cm. Berapa sentimeter sisanya?`,m*100-cm,`Diketahui ${m} m = ${m*100} cm; dipotong ${cm} cm. Sisa ${m*100} − ${cm} = ${m*100-cm} cm.`,"Samakan satuan sebelum mengurangkan.",[cm,-cm,10]);
+    if(k===3)return numeric(ch,k,n,`Ada dua kantong tepung masing-masing ${g} g. Berapa gram semuanya?`,g*2,`Diketahui dua kantong masing-masing ${g} g; ${g} + ${g} = ${g*2} g.`,"Jumlahkan berat kedua kantong.",[g,100,-100]);
+    const object=["meja belajar","buku tulis","pensil","papan tulis","tas sekolah"][n%5],unit=n%5===3?"m":"cm";
+    return qmake(ch,k,n,`Satuan yang lebih masuk akal untuk mengukur panjang ${object} adalah ...`,unit,`Panjang ${object} lebih wajar diukur dalam ${unit==="m"?"meter":"sentimeter"}.`,"Meter cocok untuk benda panjang; sentimeter untuk benda yang lebih kecil.",unit==="m"?["cm","g","kg"]:["m","g","kg"]);
+  }
+  function validQuestion(q){
+    return !!q&&Number.isInteger(q.chapterId)&&q.chapterId>=1&&q.chapterId<=6&&
+      typeof q.questionId==="string"&&typeof q.signature==="string"&&
+      typeof q.stem==="string"&&q.stem.length>12&&
+      typeof q.steps==="string"&&!!q.steps&&typeof q.explanation==="string"&&!!q.explanation&&
+      Array.isArray(q.options)&&q.options.length===4&&
+      new Set(q.options.map(o=>o.id)).size===4&&new Set(q.options.map(o=>o.text)).size===4&&
+      q.options.every(o=>typeof o.id==="string"&&typeof o.text==="string"&&!!o.text)&&
+      q.options.filter(o=>o.id===q.answerId).length===1;
+  }
+  const banks={};
+  function bank(ch){
+    if(banks[ch])return banks[ch];
+    const out=[];
+    for(let k=0;k<5;k++)for(let n=0;n<48;n++){
+      try{const q=generate(ch,k,n);if(validQuestion(q))out.push(q)}catch{}
+    }
+    banks[ch]=out;return out;
+  }
+  function pick(ch,count,recent=[]){
+    const pool=bank(ch),used=new Set(recent);
+    const ordered=[...shuffle(pool.filter(q=>!used.has(q.questionId))),...shuffle(pool.filter(q=>used.has(q.questionId)))];
+    const ids=new Set(),sigs=new Set(),picked=[];
+    for(const q of ordered){
+      if(ids.has(q.questionId)||sigs.has(q.signature))continue;
+      picked.push(q);ids.add(q.questionId);sigs.add(q.signature);
+      if(picked.length===count)break;
+    }
+    if(picked.length!==count)throw Error("Bank soal unik tidak mencukupi");
+    return picked;
+  }
+  function prepared(q,i){return {...q,difficulty:difficulty(i),options:shuffle(q.options)}}
+  function validatePackage(qs,count,chapter=null){
+    return Array.isArray(qs)&&qs.length===count&&
+      new Set(qs.map(q=>q.questionId)).size===count&&
+      new Set(qs.map(q=>q.signature)).size===count&&
+      qs.every((q,i)=>validQuestion(q)&&q.difficulty===difficulty(i)&&(chapter===null||q.chapterId===chapter));
+  }
+  function validateSession(s){
+    if(!s||!["chapter","exam","remediation"].includes(s.mode)||!Array.isArray(s.questions)||!s.questions.length||
+      !Number.isInteger(s.index)||s.index<0||s.index>=s.questions.length||typeof s.answers!=="object"||!s.answers)return false;
+    if(s.mode==="remediation")return s.questions.every(validQuestion)&&new Set(s.questions.map(q=>q.questionId)).size===s.questions.length;
+    return validatePackage(s.questions,20,s.mode==="chapter"?s.chapterId:null)&&
+      (s.mode!=="exam"||new Set(s.questions.map(q=>q.chapterId)).size===6);
+  }
+  function createChapterSession(ch,recent=[]){
+    if(!chapters.some(c=>c.id===ch))throw Error("Bab tidak dikenal");
+    const questions=pick(ch,20,recent).map(prepared);
+    if(!validatePackage(questions,20,ch))throw Error("Paket bab tidak valid");
+    return {sessionId:randomId(),mode:"chapter",chapterId:ch,questions,index:0,answers:{},done:false};
+  }
+  function createExamSession(recent={}){
+    const ordered=[];
+    for(let ch=1;ch<=6;ch++)ordered.push(...pick(ch,ch<=2?4:3,recent[`exam-${ch}`]||[]));
+    const questions=shuffle(ordered).map(prepared);
+    if(!validatePackage(questions,20)||new Set(questions.map(q=>q.chapterId)).size!==6)throw Error("Paket ujian tidak valid");
+    return {sessionId:randomId(),mode:"exam",chapterId:null,questions,index:0,answers:{},done:false};
+  }
+  function currentResult(s){
+    const correct=Object.values(s.answers).filter(a=>a.submitted&&a.correct).length;
+    const wrong=s.questions.filter(q=>s.answers[q.questionId]?.submitted&&!s.answers[q.questionId].correct).map(q=>q.questionId);
+    const total=s.questions.length;
+    return {correct,wrong,wrongQuestionIds:wrong,score:s.mode==="remediation"?null:correct*5,
+      percentage:Math.round(correct/total*100),answered:Object.values(s.answers).filter(a=>a.submitted).length};
+  }
+  function submitAnswerOnce(s,answerId){
+    if(!s||s.done)return false;
+    const q=s.questions[s.index];
+    if(s.answers[q.questionId]?.submitted)return false;
+    if(!q.options.some(o=>o.id===answerId))return false;
+    s.answers[q.questionId]={submitted:true,studentAnswerId:answerId,correct:answerId===q.answerId};
+    return true;
+  }
+  function resultSnapshot(s){
+    const stats=currentResult(s);
+    return {resultId:randomId(),sessionId:s.sessionId,mode:s.mode,chapterId:s.chapterId,
+      questions:structuredCloneSafe(s.questions),answers:structuredCloneSafe(s.answers),
+      ...stats,finishedAt:new Date().toISOString()};
+  }
+  function structuredCloneSafe(value){return JSON.parse(JSON.stringify(value))}
+  function createRemediationSession(result){
+    if(!result||!Array.isArray(result.wrongQuestionIds)||!result.wrongQuestionIds.length)return null;
+    const ids=new Set(result.wrongQuestionIds);
+    const questions=result.questions.filter(q=>ids.has(q.questionId));
+    if(questions.length!==ids.size||!questions.every(validQuestion))throw Error("Snapshot remedial tidak valid");
+    return {sessionId:randomId(),mode:"remediation",chapterId:result.chapterId,originResultId:result.resultId,
+      originMode:result.mode,questions:structuredCloneSafe(questions),index:0,answers:{},done:false};
+  }
+  function remember(s){
+    const prefix=s.mode==="exam"?"exam-":"chapter-";
+    for(let ch=1;ch<=6;ch++){
+      const ids=s.questions.filter(q=>q.chapterId===ch).map(q=>q.questionId);
+      if(ids.length)state.recent[prefix+ch]=[...(Array.isArray(state.recent[prefix+ch])?state.recent[prefix+ch]:[]),...ids].slice(-160);
+    }
+  }
+  function startNewSession(mode,ch){
+    try{
+      const s=mode==="exam"?createExamSession(state.recent):createChapterSession(ch,state.recent[`chapter-${ch}`]||[]);
+      remember(s);state.active=s;selected=null;save();navigate("quiz",true);
+    }catch(e){notice(`Paket soal belum siap: ${e.message}. Silakan minta guru memeriksa bank soal.`)}
+  }
+  function startRemedial(result){
+    if(!result?.wrongQuestionIds?.length){notice("Hebat! Tidak ada soal yang perlu diulang");return}
+    try{state.active=createRemediationSession(result);selected=null;save();navigate("quiz",true)}
+    catch{notice("Snapshot soal salah tidak valid. Hasil awal tetap disimpan.")}
+  }
+  function finishSession(){
+    const s=state.active;
+    if(!s||s.done||currentResult(s).answered!==s.questions.length)return;
+    s.done=true;
+    const result=resultSnapshot(s);
+    if(s.mode==="remediation"){
+      remedialSummary={result,origin:null};
+      state.active=null;navigate("remedialResult",true);return;
+    }
+    viewedResult=result;
+    state.active=null;navigate("result",true);
+    window.setTimeout(()=>{
+      if(screen==="result"&&viewedResult===result){
+        viewedResult=null;startNewSession(s.mode,s.chapterId);
+      }
+    },2800);
+  }
+  function findResult(id){return state.history.find(r=>r.resultId===id)||null}
+  function btn(text,action,kind="primary"){return `<button type="button" data-action="${esc(action)}" class="action ${kind}">${esc(text)}</button>`}
+  function notice(text){
+    let el=document.getElementById("notice");
+    if(!el){el=document.createElement("p");el.id="notice";el.className="surface rounded-xl p-3 my-4 text-center font-bold";el.setAttribute("role","status");app.prepend(el)}
+    el.textContent=text;el.classList.remove("hidden");
+  }
+  function openModal(text,fn){
+    previousFocus=document.activeElement;pendingAction=fn;
+    document.getElementById("modalText").textContent=text;
+    document.getElementById("modal").classList.remove("hidden");
+    document.getElementById("cancelModal").focus();
+  }
+  function closeModal(){document.getElementById("modal").classList.add("hidden");pendingAction=null;previousFocus?.focus()}
+  function guarded(fn){if(state.active&&!state.active.done)openModal("Sesi yang belum selesai tetap disimpan. Yakin ingin meninggalkan kuis?",fn);else fn()}
+  function navigate(to,force=false){
+    if(!force&&screen==="quiz"&&to!=="quiz"){guarded(()=>navigate(to,true));return}
+    screen=to;window.scrollTo(0,0);
+    ({home:renderHome,chapters:renderChapters,quiz:renderQuiz,result:renderResult,remedialResult:renderRemedial,teacher:renderTeacher})[to]();
+  }
+  function renderHome(){
+    const next=1;
+    app.innerHTML=`<section class="surface rounded-[32px] p-6 sm:p-10 grid md:grid-cols-[1fr_auto] gap-7 items-center rise">
+      <div><p class="font-extrabold text-indigo-600 tracking-wide">BELAJAR SAMBIL BERMAIN</p>
+      <h1 data-template-id="hero-title" class="canva-text font-bold leading-tight mt-3"></h1>
+      <p data-template-id="hero-subtitle" class="canva-text mt-3 font-semibold"></p>
+      <p class="mt-5 text-slate-700 max-w-xl">Hai, teman hebat! Aku Bintang. Ayo pecahkan tantangan matematika bersama! ✨</p>
+      <div class="flex flex-wrap gap-3 mt-7">${btn("MULAI BELAJAR",`start-${next}`)}${btn("PILIH BAB","chapters","secondary")}${btn("UJIAN AKHIR SEMESTER 1","exam","yellow")}</div></div>
+      <div aria-hidden="true" class="justify-self-center w-36 h-36 sm:w-48 sm:h-48 rounded-full bg-yellow-200 border-[10px] border-yellow-100 flex flex-col items-center justify-center shadow-lg rotate-[-5deg]"><span class="text-6xl">👩‍🎓</span><span class="display font-bold text-indigo-800">Bintang ★</span></div></section>
+      <section class="mt-6">
+      <div class="surface rounded-3xl p-6"><h2 class="font-bold">Cara bermain</h2><p class="mt-2 text-slate-700">Pilih jawaban, tekan PERIKSA JAWABAN, baca pembahasan, lalu lanjutkan. Setiap bab memiliki 20 tantangan.</p></div></section>
+      <div class="mt-6 flex flex-wrap gap-3">${btn("LIHAT SEMUA BAB","chapters","secondary")}${btn("PENGATURAN GURU","teacher","secondary")}</div>`;
+  }
+  function renderChapters(){
+    app.innerHTML=`<div class="flex justify-between items-end flex-wrap gap-4 mb-6"><div><p class="font-bold text-indigo-600">PILIH PETUALANGANMU</p><h1 class="font-bold">Menu Bab</h1></div>${btn("UJIAN AKHIR SEMESTER 1","exam","yellow")}</div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">${chapters.map(ch=>`<article class="surface chapter-card rounded-3xl p-6 flex flex-col rise" style="--accent:${ch.color}">
+      <div class="math-art rounded-2xl w-20 h-20 flex items-center justify-center text-2xl font-bold mb-4" style="background:${ch.color}1f;color:${ch.color}" aria-hidden="true">${esc(ch.icon)}</div>
+      <p class="font-bold" style="color:${ch.color}">BAB ${ch.id}</p><h2 class="font-bold mt-1">${esc(ch.title)}</h2><p class="mt-2 text-slate-700 flex-1">${esc(ch.description)}</p>
+      <div class="mt-5">${btn("MULAI GAME",`start-${ch.id}`)}</div></article>`).join("")}</div>
+      <div class="mt-7">${btn("KEMBALI KE BERANDA","home","secondary")}</div>`;
+  }
+  function renderQuiz(){
+    const s=state.active;if(!s){navigate("home",true);return}
+    const q=s.questions[s.index],answer=s.answers[q.questionId],checked=!!answer?.submitted;
+    if(checked)selected=answer.studentAnswerId;
+    const stats=currentResult(s);
+    const title=s.mode==="exam"?"UJIAN AKHIR SEMESTER 1":s.mode==="remediation"?"LATIHAN ULANG":`BAB ${s.chapterId} — ${chapters[s.chapterId-1].title}`;
+    const key=q.options.find(o=>o.id===q.answerId);
+    app.innerHTML=`<div class="max-w-3xl mx-auto rise wrap-text">
+      <div class="flex justify-between items-center gap-3 flex-wrap mb-5">${btn("← KELUAR KE MENU","exit","secondary")}<span class="font-bold text-indigo-800">${esc(title)}</span></div>
+      <section class="surface rounded-[28px] p-5 sm:p-8">
+      <div class="flex justify-between gap-3 flex-wrap font-bold"><span>Soal ${s.index+1} dari ${s.questions.length}</span><span>${s.mode==="remediation"?"Latihan ulang":"Tantangan matematika"}</span></div>
+      <p class="mt-5 text-sm font-bold text-indigo-700">${esc(levelNames[q.difficulty]||levelNames[0])} · Bab ${q.chapterId}</p>
+      <h1 class="font-bold mt-4 leading-snug">${esc(q.stem)}</h1>
+      <div class="grid gap-3 mt-7" role="group" aria-label="Pilihan jawaban">${q.options.map((o,i)=>`<button type="button" class="choice ${selected===o.id?"chosen":""} ${checked&&o.id===q.answerId?"good":""} ${checked&&o.id===answer.studentAnswerId&&!answer.correct?"bad":""}" data-choice="${esc(o.id)}" ${checked?"disabled":""} aria-pressed="${selected===o.id}"><span class="inline-flex justify-center items-center rounded-xl bg-indigo-50 text-indigo-800 w-9 h-9 mr-3">${"ABCD"[i]}</span>${esc(o.text)}</button>`).join("")}</div>
+      <p id="notice" class="hidden mt-5 rounded-xl bg-amber-50 p-3 text-amber-900 font-semibold" role="status"></p>
+      ${checked?`<div class="mt-6 rounded-2xl p-5 ${answer.correct?"bg-green-50 border border-green-300":"bg-rose-50 border border-rose-300"}" role="status">
+      <h2 class="font-bold">${answer.correct?"Benar! Hebat!":"Belum tepat. Tetap semangat!"}</h2><p class="mt-2">Jawaban benar: <strong>${esc(key.text)}</strong></p>
+      <p class="mt-2"><strong>Pembahasan:</strong> ${esc(q.explanation)}</p></div>
+      <div class="mt-6">${btn(s.index+1===s.questions.length?"LIHAT HASIL":"LANJUT KE SOAL BERIKUTNYA","next")}</div>`:
+      `<div class="mt-6">${btn("PERIKSA JAWABAN","check")}</div>`}
+      </section></div>`;
+    app.querySelector('[data-action="next"],[data-action="check"]').classList.add("w-full");
+  }
+  function renderResult(){
+    const r=viewedResult;if(!r){navigate("home",true);return}
+    const wrong=r.wrongQuestionIds.length;
+    app.innerHTML=`<div class="max-w-3xl mx-auto"><section class="surface rounded-[30px] p-6 sm:p-9 text-center rise">
+      <div aria-hidden="true" class="text-6xl">🏆</div><p class="font-bold text-indigo-700 mt-3">${r.mode==="exam"?"HASIL UJIAN AKHIR SEMESTER 1":`HASIL BAB ${r.chapterId}`}</p>
+      <h1 class="font-bold mt-2">${r.mode==="exam"?"Ujian Akhir Semester 1":esc(chapters[r.chapterId-1].title)}</h1>
+      <p class="display font-bold text-indigo-800 mt-4" style="font-size:clamp(3rem,11vw,5rem)">${r.score}<span class="text-2xl"> / 100</span></p>
+      <p class="font-bold">${r.score>=85?"Luar biasa! Kerja kerasmu bersinar!":r.score>=60?"Bagus! Terus berlatih, ya!":"Semangat! Kamu bisa mencoba lagi."}</p>
+      <div class="grid grid-cols-3 gap-2 mt-7 text-sm sm:text-base">
+      <div class="rounded-2xl bg-green-50 p-3"><strong>${r.correct}</strong><br>Benar</div>
+      <div class="rounded-2xl bg-rose-50 p-3"><strong>${wrong}</strong><br>Salah</div>
+      <div class="rounded-2xl bg-indigo-50 p-3"><strong>${r.percentage}%</strong><br>Keberhasilan</div></div>
+      <p class="mt-5">Nomor yang salah: ${wrong?r.questions.map((q,i)=>r.wrongQuestionIds.includes(q.questionId)?i+1:null).filter(Boolean).join(", "):"Tidak ada"}</p>
+      ${!wrong?'<p class="mt-2 font-bold text-green-800">Hebat! Tidak ada soal yang perlu diulang</p>':""}
+      <div class="flex flex-wrap justify-center gap-3 mt-7">${wrong?btn("ULANGI SOAL YANG SALAH","remedial"):""}
+      ${btn(r.mode==="exam"?"COBA PAKET UJIAN BARU":"MAIN LAGI DENGAN SOAL BARU",r.mode==="exam"?"exam":`start-${r.chapterId}`,"yellow")}
+      ${btn("KEMBALI KE MENU BAB","chapters","secondary")}</div></section>
+      <section class="surface rounded-3xl p-6 mt-5"><h2 class="font-bold">Pembahasan seluruh jawaban</h2>
+      <ol class="mt-4 space-y-4">${r.questions.map((q,i)=>{
+        const a=r.answers[q.questionId],student=q.options.find(o=>o.id===a?.studentAnswerId)?.text??"—",key=q.options.find(o=>o.id===q.answerId)?.text??"—";
+        return `<li class="border-b border-slate-100 pb-3 wrap-text"><strong>${i+1}. Bab ${q.chapterId} · ${a?.correct?"Benar":"Salah"}</strong><p>${esc(q.stem)}</p><p>Jawabanmu: ${esc(student)}. Jawaban benar: ${esc(key)}.</p><p>${esc(q.explanation)}</p></li>`;
+      }).join("")}</ol></section></div>`;
+  }
+  function renderRemedial(){
+    const summary=remedialSummary;if(!summary){navigate("home",true);return}
+    const r=summary.result,remaining=r.questions.filter(q=>!r.answers[q.questionId]?.correct);
+    app.innerHTML=`<section class="surface max-w-2xl mx-auto rounded-3xl p-6 sm:p-8 text-center rise"><div class="text-5xl" aria-hidden="true">⭐</div>
+      <h1 class="font-bold mt-3">Ringkasan Latihan Ulang</h1>
+      <p class="mt-3">${r.correct} dari ${r.questions.length} soal berhasil diperbaiki pada percobaan ini.</p>
+      <p class="mt-2">Skor sesi pertama tidak berubah${summary.origin?`: ${summary.origin.score} / 100`:""}.</p>
+      ${remaining.length?`<p class="mt-3 font-bold">${remaining.length} soal masih bisa dicoba lagi.</p>`:'<p class="mt-3 font-bold text-green-800">Hebat! Tidak ada soal yang perlu diulang</p>'}
+      <div class="flex justify-center flex-wrap gap-3 mt-6">${remaining.length?btn("ULANGI SOAL YANG SALAH","retryRemedial"):""}
+      ${btn("MULAI SESI BARU",r.originMode==="exam"?"exam":`start-${r.chapterId}`,"yellow")}${btn("KEMBALI KE MENU BAB","chapters","secondary")}</div></section>`;
+  }
+  function renderTeacher(){
+    app.innerHTML=`<section class="surface rounded-3xl p-6 sm:p-8 max-w-3xl mx-auto">
+      <h1 class="font-bold">Pengaturan Guru</h1><p class="mt-3 text-slate-700">Cakupan latihan guru tersimpan di perangkat ini. Ujian akhir semester selalu mencakup Bab 1–6.</p>
+      <fieldset class="mt-6 space-y-3"><legend class="font-bold mb-3">Bab yang ditandai telah diajarkan</legend>
+      ${chapters.map(ch=>`<label class="flex gap-3 items-start rounded-2xl border border-indigo-100 p-4 cursor-pointer">
+      <input class="scope-checkbox mt-1 w-5 h-5" type="checkbox" value="${ch.id}" ${state.scope.includes(ch.id)?"checked":""}>
+      <span><strong>Bab ${ch.id}: ${esc(ch.title)}</strong><br><small>${esc(ch.description)}</small></span></label>`).join("")}</fieldset>
+      <p id="scopeStatus" class="mt-4 text-indigo-800 font-semibold" role="status"></p>
+      <details class="mt-6 border-t border-indigo-100 pt-5"><summary class="cursor-pointer font-bold">Pemeriksaan pengembang</summary>
+      <p class="mt-3 text-sm">Pemeriksaan logika dijalankan saat aplikasi dibuka tanpa mengubah progres siswa. Tampilan perangkat, interaksi browser tertentu, dan daya tahan penyimpanan tetap perlu diperiksa manual.</p>
+      <p class="mt-2 font-bold">${checks.filter(c=>c.pass).length}/${checks.length} pemeriksaan lolos</p>
+      <ul class="mt-2 list-disc pl-5 text-sm space-y-1">${checks.map(c=>`<li class="${c.pass?"text-green-800":"text-red-800"}">${esc(c.name)}: ${c.pass?"Lulus":`Gagal — ${c.error}`}</li>`).join("")}</ul></details>
+      <div class="mt-6 flex gap-3 flex-wrap">${btn("UJIAN AKHIR SEMESTER 1","exam","yellow")}${btn("KEMBALI KE MENU BAB","chapters","secondary")}</div></section>`;
+    app.querySelectorAll(".scope-checkbox").forEach(el=>el.addEventListener("change",()=>{
+      const ids=[...app.querySelectorAll(".scope-checkbox:checked")].map(input=>Number(input.value));
+      if(!ids.length){el.checked=true;document.getElementById("scopeStatus").textContent="Pilih sedikitnya satu bab.";return}
+      state.scope=ids;save();document.getElementById("scopeStatus").textContent="Pilihan bab tersimpan. Cakupan ujian tetap Bab 1–6.";
+    }));
+  }
+  app.addEventListener("click",e=>{
+    const choice=e.target.closest("[data-choice]");
+    if(choice&&state.active){
+      const s=state.active,q=s.questions[s.index];
+      if(s.answers[q.questionId]?.submitted)return;
+      selected=choice.dataset.choice;
+      app.querySelectorAll("[data-choice]").forEach(b=>{b.classList.toggle("chosen",b===choice);b.setAttribute("aria-pressed",String(b===choice))});
+      return;
+    }
+    const target=e.target.closest("[data-action]");if(!target)return;
+    const action=target.dataset.action;
+    if(action.startsWith("start-"))guarded(()=>startNewSession("chapter",Number(action.slice(6))));
+    else if(action==="exam")guarded(()=>startNewSession("exam"));
+    else if(action==="check"){
+      const s=state.active;if(!s)return;
+      if(selected===null){notice("Pilih jawaban dahulu, ya!");return}
+      if(submitAnswerOnce(s,selected)){save();renderQuiz()}
+    }else if(action==="next"){
+      const s=state.active;if(!s||!s.answers[s.questions[s.index].questionId]?.submitted)return;
+      if(s.index===s.questions.length-1)finishSession();
+      else{s.index++;selected=s.answers[s.questions[s.index].questionId]?.studentAnswerId??null;save();renderQuiz()}
+    }else if(action==="resume"&&state.active){selected=state.active.answers[state.active.questions[state.active.index].questionId]?.studentAnswerId??null;navigate("quiz",true)}
+    else if(action==="exit")navigate("chapters");
+    else if(action==="remedial")startRemedial(viewedResult);
+    else if(action==="retryRemedial"&&remedialSummary){
+      const r=remedialSummary.result;
+      const wrongQuestionIds=r.questions.filter(q=>!r.answers[q.questionId]?.correct).map(q=>q.questionId);
+      startRemedial({...r,wrongQuestionIds});
+    }else if(["home","chapters","teacher"].includes(action))navigate(action);
+  });
+  document.getElementById("homeNav").addEventListener("click",()=>navigate("home"));
+  document.getElementById("cancelModal").addEventListener("click",closeModal);
+  document.getElementById("confirmModal").addEventListener("click",()=>{const fn=pendingAction;closeModal();if(fn)fn()});
+  document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!document.getElementById("modal").classList.contains("hidden"))closeModal()});
+
+  function runChecks(){
+    const results=[];
+    const check=(name,fn)=>{try{if(!fn())throw Error("Kondisi tidak terpenuhi");results.push({name,pass:true})}catch(e){results.push({name,pass:false,error:e.message})}};
+    for(let ch=1;ch<=6;ch++)check(`Bab ${ch}: bank, sesi berulang, keunikan, tingkat`,()=>{
+      const pool=bank(ch);
+      if(pool.length<100||new Set(pool.map(q=>q.questionId)).size!==pool.length||new Set(pool.map(q=>q.signature)).size!==pool.length)return false;
+      for(let n=0;n<6;n++){const s=createChapterSession(ch);if(!validatePackage(s.questions,20,ch))return false}
+      return true;
+    });
+    check("Penilaian benar, submit ulang, dan kunci teracak",()=>{
+      const s=createChapterSession(1),q=s.questions[0],key=q.options.find(o=>o.id===q.answerId);
+      if(!key||!q.explanation.includes(q.steps))return false;
+      return submitAnswerOnce(s,key.id)&&!submitAnswerOnce(s,key.id)&&currentResult(s).correct===1&&currentResult(s).score===5;
+    });
+    check("Jawaban salah dan daftar salah",()=>{
+      const s=createChapterSession(2),q=s.questions[0],wrong=q.options.find(o=>o.id!==q.answerId);
+      return submitAnswerOnce(s,wrong.id)&&!submitAnswerOnce(s,wrong.id)&&currentResult(s).score===0&&
+        currentResult(s).wrongQuestionIds.join()===q.questionId;
+    });
+    check("Skor maksimal dan skor nol",()=>{
+      const perfect=createChapterSession(3),zero=createChapterSession(3);
+      for(let i=0;i<20;i++){
+        perfect.index=i;zero.index=i;
+        submitAnswerOnce(perfect,perfect.questions[i].answerId);
+        submitAnswerOnce(zero,zero.questions[i].options.find(o=>o.id!==zero.questions[i].answerId).id);
+      }
+      const a=currentResult(perfect),b=currentResult(zero);
+      return a.correct===20&&a.score===100&&a.percentage===100&&a.wrong.length===0&&
+        b.correct===0&&b.score===0&&b.percentage===0&&b.wrong.length===20;
+    });
+    check("Snapshot remedial dan skor awal",()=>{
+      const s=createChapterSession(4),q=s.questions[0];
+      submitAnswerOnce(s,q.options.find(o=>o.id!==q.answerId).id);
+      const original=resultSnapshot(s),rem=createRemediationSession(original);
+      submitAnswerOnce(rem,rem.questions[0].answerId);
+      return rem.questions.length===1&&original.wrongQuestionIds.length===1&&
+        original.score===0&&currentResult(rem).correct===1&&original.answers[q.questionId].correct===false;
+    });
+    check("Sesi baru independen",()=>{
+      const a=createChapterSession(5),b=createChapterSession(5);
+      submitAnswerOnce(a,a.questions[0].answerId);
+      return a.sessionId!==b.sessionId&&b.questions.length===20&&currentResult(b).score===0&&
+        currentResult(a).score===5;
+    });
+    check("Ujian 20 soal dari enam bab; skor terpisah",()=>{
+      const exam=createExamSession(),chapter=createChapterSession(6);
+      submitAnswerOnce(exam,exam.questions[0].answerId);
+      return validatePackage(exam.questions,20)&&new Set(exam.questions.map(q=>q.chapterId)).size===6&&
+        currentResult(exam).score===5&&currentResult(chapter).score===0;
+    });
+    check("Pengacakan dan ID pilihan stabil",()=>{
+      const q=bank(1)[0],orders=new Set();
+      for(let i=0;i<14;i++){
+        const p=prepared(q,0);orders.add(p.options.map(o=>o.id).join(","));
+        if(p.options.filter(o=>o.id===p.answerId).length!==1)return false;
+      }
+      return orders.size>1;
+    });
+    check("Navigasi dan data kosong/rusak: pemeriksaan struktur",()=>{
+      const s=createChapterSession(1);
+      return !createRemediationSession({wrongQuestionIds:[]})&&validateSession(s)&&
+        !validateSession({...s,index:99})&&!validateSession({...s,questions:[]})&&
+        Array.isArray(fresh().history);
+    });
+    return results;
+  }
+
+  state=load();
+  checks=runChecks();
+  if(checks.some(c=>!c.pass))storageWarning="Sebagian pemeriksaan soal gagal. Detail tersedia pada Pengaturan Guru.";
+  if(state.active){selected=state.active.answers[state.active.questions[state.active.index].questionId]?.studentAnswerId??null;navigate("quiz",true)}
+  else navigate("home",true);
+})();
+</script>
+ 
+</body></html>
