@@ -43,9 +43,8 @@
     </div>
    </header>
    <main id="app" class="w-full max-w-6xl mx-auto px-4 sm:px-6 py-8"></main>
-   <footer class="max-w-6xl mx-auto px-4 sm:px-6 pb-8 text-center">
-    <p data-template-id="teacher-note" class="canva-text" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 14px;">Materi dapat disesuaikan guru dengan ATP sekolah sasaran.</p>
-   </footer>
+   <div class="hidden" aria-hidden="true"><span data-template-id="hero-title" class="canva-text" style="color: rgb(23, 37, 75); font-weight: 700; font-style: normal; font-size: 16px;">BRAIN GAMES MATEMATIKA CERDAS</span><span data-template-id="hero-subtitle" class="canva-text" style="color: rgb(49, 89, 217); font-weight: 700; font-style: normal; font-size: 19px;">Kelas 4 SD/MI — Semester 1</span>
+   </div>
   </div>
   <div id="modal" class="hidden fixed inset-0 z-50 bg-slate-950/60 p-4 flex items-center justify-center" role="presentation">
    <section class="surface w-full max-w-md rounded-3xl p-6" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
@@ -77,26 +76,10 @@
   const fresh=()=>({version:VERSION,chapters:{},exam:null,history:[],recent:{},active:null,scope:[1,2,3,4,5,6]});
   let storageOK=true, storageWarning="", state=fresh(),screen="home",selected=null,viewedResult=null,remedialSummary=null,pendingAction=null,previousFocus=null,checks=[];
   function load(){
-    try{
-      const raw=localStorage.getItem(KEY);
-      if(!raw)return fresh();
-      const data=JSON.parse(raw);
-      if(!data||data.version!==VERSION||typeof data!=="object")throw Error("Versi progres tidak sesuai");
-      const base=fresh();
-      base.chapters=data.chapters&&typeof data.chapters==="object"&&!Array.isArray(data.chapters)?data.chapters:{};
-      base.exam=data.exam&&typeof data.exam==="object"?data.exam:null;
-      base.history=Array.isArray(data.history)?data.history.slice(-80):[];
-      base.recent=data.recent&&typeof data.recent==="object"&&!Array.isArray(data.recent)?data.recent:{};
-      base.scope=Array.isArray(data.scope)?[...new Set(data.scope.filter(x=>Number.isInteger(x)&&x>=1&&x<=6))]:base.scope;
-      if(!base.scope.length)base.scope=[1,2,3,4,5,6];
-      base.active=data.active&&validateSession(data.active)?data.active:null;
-      return base;
-    }catch{
-      storageWarning="Progres tersimpan tidak dapat dibaca. Permainan dimulai dengan progres baru.";
-      return fresh();
-    }
+    try{[KEY,...oldKeys].forEach(k=>localStorage.removeItem(k))}catch{}
+    return fresh();
   }
-  function save(){try{localStorage.setItem(KEY,JSON.stringify(state));storageOK=true}catch{storageOK=false}}
+  function save(){}
   function qmake(ch,k,n,stem,answer,steps,concept,alternatives){
     const values=[String(answer),...alternatives.map(String)];
     if(new Set(values).size!==4)throw Error(`Pilihan ganda tidak unik: ${ch}-${k}-${n}`);
@@ -279,13 +262,16 @@
     s.done=true;
     const result=resultSnapshot(s);
     if(s.mode==="remediation"){
-      remedialSummary={result,origin:findResult(s.originResultId)};
-    }else{
-      viewedResult=result;
-      state.history.push(result);state.history=state.history.slice(-80);
-      if(s.mode==="exam")state.exam=result;else state.chapters[s.chapterId]=result;
+      remedialSummary={result,origin:null};
+      state.active=null;navigate("remedialResult",true);return;
     }
-    state.active=null;save();navigate(s.mode==="remediation"?"remedialResult":"result",true);
+    viewedResult=result;
+    state.active=null;navigate("result",true);
+    window.setTimeout(()=>{
+      if(screen==="result"&&viewedResult===result){
+        viewedResult=null;startNewSession(s.mode,s.chapterId);
+      }
+    },2800);
   }
   function findResult(id){return state.history.find(r=>r.resultId===id)||null}
   function btn(text,action,kind="primary"){return `<button type="button" data-action="${esc(action)}" class="action ${kind}">${esc(text)}</button>`}
@@ -308,7 +294,7 @@
     ({home:renderHome,chapters:renderChapters,quiz:renderQuiz,result:renderResult,remedialResult:renderRemedial,teacher:renderTeacher})[to]();
   }
   function renderHome(){
-    const next=chapters.find(ch=>!state.chapters[ch.id])?.id||1;
+    const next=1;
     app.innerHTML=`<section class="surface rounded-[32px] p-6 sm:p-10 grid md:grid-cols-[1fr_auto] gap-7 items-center rise">
       <div><p class="font-extrabold text-indigo-600 tracking-wide">BELAJAR SAMBIL BERMAIN</p>
       <h1 data-template-id="hero-title" class="canva-text font-bold leading-tight mt-3"></h1>
@@ -316,22 +302,16 @@
       <p class="mt-5 text-slate-700 max-w-xl">Hai, teman hebat! Aku Bintang. Ayo pecahkan tantangan matematika bersama! ✨</p>
       <div class="flex flex-wrap gap-3 mt-7">${btn("MULAI BELAJAR",`start-${next}`)}${btn("PILIH BAB","chapters","secondary")}${btn("UJIAN AKHIR SEMESTER 1","exam","yellow")}</div></div>
       <div aria-hidden="true" class="justify-self-center w-36 h-36 sm:w-48 sm:h-48 rounded-full bg-yellow-200 border-[10px] border-yellow-100 flex flex-col items-center justify-center shadow-lg rotate-[-5deg]"><span class="text-6xl">👩‍🎓</span><span class="display font-bold text-indigo-800">Bintang ★</span></div></section>
-      <section class="mt-6 grid md:grid-cols-2 gap-4">
-      <div class="surface rounded-3xl p-6"><h2 class="font-bold">Cara bermain</h2><p class="mt-2 text-slate-700">Pilih jawaban, tekan PERIKSA JAWABAN, baca pembahasan, lalu lanjutkan. Setiap bab memiliki 20 tantangan.</p></div>
-      <div class="surface rounded-3xl p-6"><h2 class="font-bold">Progresmu</h2><p class="mt-2 text-slate-700">${chapters.map(c=>`Bab ${c.id}: ${state.chapters[c.id]?.score??"Belum dimainkan"}${state.chapters[c.id]? " / 100":""}`).join(" · ")}</p>
-      ${state.active?`<div class="mt-4">${btn("LANJUTKAN SESI","resume")}</div>`:""}
-      ${!storageOK?'<p class="mt-3 text-amber-800">Penyimpanan perangkat tidak tersedia. Progres mungkin hilang saat halaman ditutup.</p>':""}
-      ${storageWarning?`<p class="mt-3 text-amber-800">${esc(storageWarning)}</p>`:""}</div></section>
-      <div class="mt-6 flex flex-wrap gap-3">${btn("LIHAT SEMUA BAB","chapters","secondary")}${btn("PENGATURAN GURU","teacher","secondary")}${btn("HAPUS PROGRES LOKAL","clear","secondary")}</div>`;
+      <section class="mt-6">
+      <div class="surface rounded-3xl p-6"><h2 class="font-bold">Cara bermain</h2><p class="mt-2 text-slate-700">Pilih jawaban, tekan PERIKSA JAWABAN, baca pembahasan, lalu lanjutkan. Setiap bab memiliki 20 tantangan.</p></div></section>
+      <div class="mt-6 flex flex-wrap gap-3">${btn("LIHAT SEMUA BAB","chapters","secondary")}${btn("PENGATURAN GURU","teacher","secondary")}</div>`;
   }
   function renderChapters(){
     app.innerHTML=`<div class="flex justify-between items-end flex-wrap gap-4 mb-6"><div><p class="font-bold text-indigo-600">PILIH PETUALANGANMU</p><h1 class="font-bold">Menu Bab</h1></div>${btn("UJIAN AKHIR SEMESTER 1","exam","yellow")}</div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">${chapters.map(ch=>`<article class="surface chapter-card rounded-3xl p-6 flex flex-col rise" style="--accent:${ch.color}">
       <div class="math-art rounded-2xl w-20 h-20 flex items-center justify-center text-2xl font-bold mb-4" style="background:${ch.color}1f;color:${ch.color}" aria-hidden="true">${esc(ch.icon)}</div>
       <p class="font-bold" style="color:${ch.color}">BAB ${ch.id}</p><h2 class="font-bold mt-1">${esc(ch.title)}</h2><p class="mt-2 text-slate-700 flex-1">${esc(ch.description)}</p>
-      <div class="bar mt-5" role="progressbar" aria-label="Progres Bab ${ch.id}" aria-valuenow="${state.chapters[ch.id]?.correct||0}" aria-valuemin="0" aria-valuemax="20"><div class="fill" style="width:${(state.chapters[ch.id]?.correct||0)*5}%"></div></div>
-      <p class="text-sm text-slate-600 mt-2">Hasil terakhir: ${state.chapters[ch.id]?.score??"Belum dimainkan"}${state.chapters[ch.id]?" / 100":""}</p>
-      <div class="mt-4">${btn(state.chapters[ch.id]?"MAIN LAGI":"MULAI GAME",`start-${ch.id}`)}</div></article>`).join("")}</div>
+      <div class="mt-5">${btn("MULAI GAME",`start-${ch.id}`)}</div></article>`).join("")}</div>
       <div class="mt-7">${btn("KEMBALI KE BERANDA","home","secondary")}</div>`;
   }
   function renderQuiz(){
@@ -344,8 +324,7 @@
     app.innerHTML=`<div class="max-w-3xl mx-auto rise wrap-text">
       <div class="flex justify-between items-center gap-3 flex-wrap mb-5">${btn("← KELUAR KE MENU","exit","secondary")}<span class="font-bold text-indigo-800">${esc(title)}</span></div>
       <section class="surface rounded-[28px] p-5 sm:p-8">
-      <div class="flex justify-between gap-3 flex-wrap font-bold"><span>Soal ${s.index+1} dari ${s.questions.length}</span><span>${s.mode==="remediation"?"Latihan ulang":`Skor sementara: ${stats.score} / 100`}</span></div>
-      <div class="bar mt-4" role="progressbar" aria-label="Progres soal" aria-valuenow="${s.index+1}" aria-valuemin="1" aria-valuemax="${s.questions.length}"><div class="fill" style="width:${((s.index+1)/s.questions.length)*100}%"></div></div>
+      <div class="flex justify-between gap-3 flex-wrap font-bold"><span>Soal ${s.index+1} dari ${s.questions.length}</span><span>${s.mode==="remediation"?"Latihan ulang":"Tantangan matematika"}</span></div>
       <p class="mt-5 text-sm font-bold text-indigo-700">${esc(levelNames[q.difficulty]||levelNames[0])} · Bab ${q.chapterId}</p>
       <h1 class="font-bold mt-4 leading-snug">${esc(q.stem)}</h1>
       <div class="grid gap-3 mt-7" role="group" aria-label="Pilihan jawaban">${q.options.map((o,i)=>`<button type="button" class="choice ${selected===o.id?"chosen":""} ${checked&&o.id===q.answerId?"good":""} ${checked&&o.id===answer.studentAnswerId&&!answer.correct?"bad":""}" data-choice="${esc(o.id)}" ${checked?"disabled":""} aria-pressed="${selected===o.id}"><span class="inline-flex justify-center items-center rounded-xl bg-indigo-50 text-indigo-800 w-9 h-9 mr-3">${"ABCD"[i]}</span>${esc(o.text)}</button>`).join("")}</div>
@@ -439,12 +418,7 @@
       const r=remedialSummary.result;
       const wrongQuestionIds=r.questions.filter(q=>!r.answers[q.questionId]?.correct).map(q=>q.questionId);
       startRemedial({...r,wrongQuestionIds});
-    }else if(action==="clear")openModal("Ini akan menghapus seluruh hasil, riwayat, dan sesi aktif pada perangkat ini. Tindakan ini tidak dapat dibatalkan.",()=>{
-      state=fresh();viewedResult=null;remedialSummary=null;selected=null;storageWarning="";
-      try{localStorage.removeItem(KEY);oldKeys.forEach(k=>localStorage.removeItem(k));storageOK=true}catch{storageOK=false}
-      navigate("home",true);
-    });
-    else if(["home","chapters","teacher"].includes(action))navigate(action);
+    }else if(["home","chapters","teacher"].includes(action))navigate(action);
   });
   document.getElementById("homeNav").addEventListener("click",()=>navigate("home"));
   document.getElementById("cancelModal").addEventListener("click",closeModal);
